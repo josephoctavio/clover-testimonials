@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clover Testimonials</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Font Imports -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600&family=Roboto:wght@400;500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Loader Overlay -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <div id="loader-text">Loading... please wait</div>
+  </div>
+
+  <!-- Main App Container -->
+  <div id="app">
+    <header>
+      <h1>Submit a Testimonial</h1>
+    </header>
+    <div class="content">
+      <form id="testimonial-form">
+        <label>
+          Your Name
+          <input type="text" name="Name" placeholder="John Doe" required />
+        </label>
+        <label>
+          Rating
+          <select name="Rating" required>
+            <option value="">Select rating</option>
+            <option>★</option>
+            <option>★★</option>
+            <option>★★★</option>
+            <option>★★★★</option>
+            <option>★★★★★</option>
+          </select>
+        </label>
+        <label>
+          Your Testimonial
+          <textarea name="Comment" placeholder="Your feedback..." rows="4" required></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="message"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
